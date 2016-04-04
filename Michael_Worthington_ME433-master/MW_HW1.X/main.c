@@ -70,6 +70,8 @@
 #pragma config BWP = OFF                // Boot Flash Write Protect bit (Protection Disabled)
 #pragma config CP = OFF                 // Code Protect (Protection Disabled)
 
+void delay(void);
+
 int main() {
 
     __builtin_disable_interrupts();
@@ -96,10 +98,18 @@ int main() {
     LATAbits.LATA4 = 1;
     
     while(1) {
-        
+        delay();
+        LATAbits.LATA4 = !LATAbits.LATA4;
 	    // use _CP0_SET_COUNT(0) and _CP0_GET_COUNT() to test the PIC timing
 		// remember the core timer runs at half the CPU speed
     }
+    return 0;
     
-    
+}
+
+void delay(void) {
+    int j;
+    for (j = 0; j<1600; j++) {
+        
+    }
 }
