@@ -98,9 +98,20 @@ int main() {
     LATAbits.LATA4 = 1;
     
     while(1) {
-        delay();
-        LATAbits.LATA4 = !LATAbits.LATA4;
-	    // use _CP0_SET_COUNT(0) and _CP0_GET_COUNT() to test the PIC timing
+        //delay();
+        
+	     _CP0_SET_COUNT(0);
+          
+         while(_CP0_GET_COUNT() <8000) {
+          ;
+          while(!PORTBbits.RB4){
+            ;
+        }
+
+         }
+         LATAbits.LATA4 = !LATAbits.LATA4;
+          // use _CP0_SET_COUNT(0) and _CP0_GET_COUNT() to test the PIC timing
+		// remember the core timer runs at half the CPU speed
 		// remember the core timer runs at half the CPU speed
     }
     return 0;
@@ -108,8 +119,8 @@ int main() {
 }
 
 void delay(void) {
-    int j;
-    for (j = 0; j<1600; j++) {
-        
-    }
+    //_CPO_SET_COUNT(0);
+    //while(_CPO_GET_COUNT()<4) {
+       // ;
+    //}
 }
