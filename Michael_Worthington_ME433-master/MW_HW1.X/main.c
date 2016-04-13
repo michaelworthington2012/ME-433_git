@@ -93,9 +93,9 @@ int main() {
     __builtin_enable_interrupts();
     
     // setting A4 as output and B4 as input
-    TRISBbits.TRISB4 = 1;
-    TRISAbits.TRISA4 = 0;
-    LATAbits.LATA4 = 1;
+    TRISBbits.TRISB4 = 1; // set B as an input
+    TRISAbits.TRISA4 = 0; // set A as an output
+    LATAbits.LATA4 = 1; // Set output as high to test
     
     while(1) {
         //delay();
@@ -104,12 +104,12 @@ int main() {
           
          while(_CP0_GET_COUNT() <8000) {
           ;
-          while(!PORTBbits.RB4){
+          while(!PORTBbits.RB4){ //turn LED off if button is pushed
             ;
         }
 
          }
-         LATAbits.LATA4 = !LATAbits.LATA4;
+         LATAbits.LATA4 = !LATAbits.LATA4; // toggle LED
           // use _CP0_SET_COUNT(0) and _CP0_GET_COUNT() to test the PIC timing
 		// remember the core timer runs at half the CPU speed
 		// remember the core timer runs at half the CPU speed
