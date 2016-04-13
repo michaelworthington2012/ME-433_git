@@ -687,16 +687,17 @@ design rules under a new name.</description>
 <element name="U$1" library="Homework2" package="DIL28-3" value="PIC32" x="25.4" y="22.86" rot="R270"/>
 <element name="U$2" library="Homework2" package="TO92" value="MCP1702" x="-39.37" y="25.4"/>
 <element name="U$3" library="Homework2" package="USB-MB-H" value="USB_B_PCB" x="3.81" y="44.45"/>
-<element name="10UF_1" library="Homework2" package="C050-024X044" value="" x="-38.1" y="-3.81"/>
-<element name="0.1UF_4" library="Homework2" package="C025-024X044" value="" x="-39.37" y="-8.89"/>
-<element name="0.1UF_1" library="Homework2" package="C025-024X044" value="" x="-39.37" y="-13.97"/>
-<element name="0.1UF_2" library="Homework2" package="C025-024X044" value="" x="-39.37" y="-19.05"/>
-<element name="0.1UF_3" library="Homework2" package="C025-024X044" value="" x="-39.37" y="-24.13"/>
-<element name="330_R1" library="Homework2" package="0204/5" value="" x="-38.1" y="-27.94"/>
-<element name="330_R2" library="Homework2" package="0204/5" value="" x="-38.1" y="-31.75"/>
-<element name="10K_R3" library="Homework2" package="0204/5" value="" x="-38.1" y="-35.56"/>
-<element name="10K_R4" library="Homework2" package="0204/5" value="" x="-38.1" y="-39.37"/>
-<element name="8MHZRES" library="SparkFun-FreqCtrl" package="RESONATOR-PTH" value="" x="-38.1" y="-43.18"/>
+<element name="10UF_1" library="Homework2" package="C050-024X044" value="" x="58.42" y="45.72"/>
+<element name="0.1UF_4" library="Homework2" package="C025-024X044" value="" x="57.15" y="40.64"/>
+<element name="0.1UF_1" library="Homework2" package="C025-024X044" value="" x="57.15" y="35.56"/>
+<element name="0.1UF_2" library="Homework2" package="C025-024X044" value="" x="57.15" y="30.48"/>
+<element name="0.1UF_3" library="Homework2" package="C025-024X044" value="" x="57.15" y="25.4"/>
+<element name="330_R1" library="Homework2" package="0204/5" value="" x="58.42" y="21.59"/>
+<element name="330_R2" library="Homework2" package="0204/5" value="" x="58.42" y="17.78"/>
+<element name="10K_R3" library="Homework2" package="0204/5" value="" x="58.42" y="13.97"/>
+<element name="10K_R4" library="Homework2" package="0204/5" value="" x="58.42" y="10.16"/>
+<element name="8MHZRES" library="SparkFun-FreqCtrl" package="RESONATOR-PTH" value="" x="58.42" y="6.35"/>
+<element name="10UF_2" library="Homework2" package="C050-024X044" value="" x="58.42" y="0"/>
 </elements>
 <signals>
 </signals>

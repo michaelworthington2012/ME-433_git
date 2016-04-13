@@ -8977,17 +8977,17 @@ Used, eg, on the Arduino Pro/ Pro Mini boards.&lt;br&gt;
 <instance part="J2" gate="G$1" x="132.08" y="53.34" rot="R180"/>
 <instance part="PICKIT" gate="G$1" x="134.62" y="73.66" rot="R180"/>
 <instance part="U$3" gate="G$1" x="30.48" y="88.9" rot="R90"/>
-<instance part="10UF_1" gate="G$1" x="121.92" y="33.02"/>
-<instance part="0.1UF_4" gate="G$1" x="99.06" y="78.74"/>
-<instance part="0.1UF_1" gate="G$1" x="43.18" y="55.88"/>
+<instance part="10UF_1" gate="G$1" x="106.68" y="33.02"/>
+<instance part="0.1UF_4" gate="G$1" x="152.4" y="12.7"/>
+<instance part="0.1UF_1" gate="G$1" x="132.08" y="12.7"/>
 <instance part="0.1UF_2" gate="G$1" x="104.14" y="60.96"/>
-<instance part="0.1UF_3" gate="G$1" x="48.26" y="71.12"/>
+<instance part="0.1UF_3" gate="G$1" x="137.16" y="27.94"/>
 <instance part="330_R1" gate="G$1" x="40.64" y="-5.08"/>
 <instance part="330_R2" gate="G$1" x="22.86" y="-5.08"/>
 <instance part="10K_R3" gate="G$1" x="22.86" y="-12.7"/>
 <instance part="10K_R4" gate="G$1" x="40.64" y="-10.16"/>
 <instance part="8MHZRES" gate="G$1" x="38.1" y="38.1" rot="R90"/>
-<instance part="10UF_2" gate="G$1" x="99.06" y="93.98"/>
+<instance part="10UF_2" gate="G$1" x="152.4" y="27.94"/>
 <instance part="RESET" gate="J$1" x="73.66" y="-7.62"/>
 <instance part="U$4" gate="G$1" x="71.12" y="91.44"/>
 <instance part="USER" gate="J$1" x="96.52" y="-10.16"/>
@@ -9031,6 +9031,35 @@ Used, eg, on the Arduino Pro/ Pro Mini boards.&lt;br&gt;
 <segment>
 <pinref part="U$3" gate="G$1" pin="5.GND"/>
 <wire x1="40.64" y1="81.28" x2="40.64" y2="76.2" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="PICKIT" gate="G$1" pin="1"/>
+<wire x1="48.26" y1="78.74" x2="127" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="78.74" x2="48.26" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="1.MCLR"/>
+<wire x1="58.42" y1="60.96" x2="48.26" y2="60.96" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="PICKIT" gate="G$1" pin="3"/>
+<wire x1="127" y1="73.66" x2="124.46" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="76.2" x2="50.8" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="76.2" x2="50.8" y2="53.34" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="4.PGED1"/>
+<wire x1="50.8" y1="53.34" x2="58.42" y2="53.34" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="PICKIT" gate="G$1" pin="4"/>
+<wire x1="127" y1="71.12" x2="124.46" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="73.66" x2="53.34" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="73.66" x2="53.34" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="5.PGEC1"/>
+<wire x1="53.34" y1="50.8" x2="58.42" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

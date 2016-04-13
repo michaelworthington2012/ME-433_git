@@ -144,6 +144,22 @@
 <wire x1="49.9999" y1="0" x2="49.9999" y2="49.9999" width="0" layer="20"/>
 <wire x1="49.9999" y1="49.9999" x2="0" y2="49.9999" width="0" layer="20"/>
 <wire x1="0" y1="49.9999" x2="0" y2="0" width="0" layer="20"/>
+<text x="3.81" y="31.115" size="1.778" layer="21">A1</text>
+<text x="3.81" y="33.655" size="1.778" layer="21">A0</text>
+<text x="3.81" y="28.575" size="1.778" layer="21">B2</text>
+<text x="3.81" y="26.035" size="1.778" layer="21">B3</text>
+<text x="3.81" y="23.495" size="1.778" layer="21">B4</text>
+<text x="3.81" y="20.955" size="1.778" layer="21">A4</text>
+<text x="3.81" y="18.415" size="1.778" layer="21">3.3V</text>
+<text x="3.81" y="15.875" size="1.778" layer="21">GND</text>
+<text x="46.355" y="31.115" size="1.778" layer="21" align="bottom-right">B14</text>
+<text x="46.355" y="33.655" size="1.778" layer="21" align="bottom-right">B15</text>
+<text x="46.355" y="28.575" size="1.778" layer="21" align="bottom-right">B13</text>
+<text x="46.355" y="26.035" size="1.778" layer="21" align="bottom-right">B9</text>
+<text x="46.355" y="23.495" size="1.778" layer="21" align="bottom-right">B8</text>
+<text x="46.355" y="20.955" size="1.778" layer="21" align="bottom-right">B7</text>
+<text x="46.355" y="18.415" size="1.778" layer="21" align="bottom-right">5V</text>
+<text x="46.355" y="15.875" size="1.778" layer="21" align="bottom-right">GND</text>
 </plain>
 <libraries>
 <library name="Homework2">
@@ -348,6 +364,106 @@
 <text x="3.175" y="0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="3.175" y="-1.27" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 </package>
+<package name="USB-MB-H">
+<description>&lt;b&gt;USB Series Mini-B Hole Mounted&lt;/b&gt;</description>
+<wire x1="-3.75" y1="3.9" x2="-3.75" y2="-3.9" width="0.127" layer="22"/>
+<wire x1="5.25" y1="3.9" x2="5.25" y2="-3.9" width="0.127" layer="22"/>
+<wire x1="-3.75" y1="3.9" x2="5.25" y2="3.9" width="0.127" layer="22"/>
+<wire x1="-3.75" y1="-3.9" x2="5.25" y2="-3.9" width="0.127" layer="22"/>
+<wire x1="0.75" y1="3.5" x2="-3.25" y2="3" width="0.127" layer="22"/>
+<wire x1="-3.25" y1="3" x2="-3.25" y2="2" width="0.127" layer="22"/>
+<wire x1="-3.25" y1="2" x2="0.75" y2="1.5" width="0.127" layer="22"/>
+<wire x1="1.25" y1="-3.5" x2="-3.25" y2="-3" width="0.127" layer="22"/>
+<wire x1="-3.25" y1="-3" x2="-3.25" y2="-2" width="0.127" layer="22"/>
+<wire x1="-3.25" y1="-2" x2="1.25" y2="-1.5" width="0.127" layer="22"/>
+<wire x1="-3.25" y1="1.25" x2="1.75" y2="0.75" width="0.127" layer="22"/>
+<wire x1="1.75" y1="0.75" x2="1.75" y2="-0.75" width="0.127" layer="22"/>
+<wire x1="1.75" y1="-0.75" x2="-3.25" y2="-1.25" width="0.127" layer="22"/>
+<pad name="VBUS" x="5.1" y="1.6" drill="0.8"/>
+<pad name="D+" x="5.1" y="0" drill="0.8"/>
+<pad name="GND" x="5.1" y="-1.6" drill="0.8"/>
+<pad name="D-" x="3.9" y="0.8" drill="0.8"/>
+<pad name="ID" x="3.9" y="-0.8" drill="0.8"/>
+<pad name="P$6" x="0" y="-3.65" drill="1.9"/>
+<pad name="P$7" x="0" y="3.65" drill="1.9"/>
+<text x="7.25" y="1.5" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<rectangle x1="3.25" y1="3" x2="5.75" y2="4.4" layer="43"/>
+<rectangle x1="3.25" y1="-4.4" x2="5.75" y2="-3" layer="43"/>
+<rectangle x1="-3.75" y1="-3.1" x2="-1.425" y2="3.1" layer="43"/>
+<rectangle x1="-1.425" y1="-2.325" x2="-0.65" y2="2.325" layer="43"/>
+</package>
+<package name="C050-024X044">
+<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
+grid 5 mm, outline 2.4 x 4.4 mm</description>
+<wire x1="-2.159" y1="-0.635" x2="-2.159" y2="0.635" width="0.1524" layer="51"/>
+<wire x1="-2.159" y1="0.635" x2="-1.651" y2="1.143" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-2.159" y1="-0.635" x2="-1.651" y2="-1.143" width="0.1524" layer="21" curve="90"/>
+<wire x1="1.651" y1="1.143" x2="-1.651" y2="1.143" width="0.1524" layer="21"/>
+<wire x1="2.159" y1="-0.635" x2="2.159" y2="0.635" width="0.1524" layer="51"/>
+<wire x1="1.651" y1="-1.143" x2="-1.651" y2="-1.143" width="0.1524" layer="21"/>
+<wire x1="1.651" y1="1.143" x2="2.159" y2="0.635" width="0.1524" layer="21" curve="-90"/>
+<wire x1="1.651" y1="-1.143" x2="2.159" y2="-0.635" width="0.1524" layer="21" curve="90"/>
+<wire x1="-0.3048" y1="0.762" x2="-0.3048" y2="0" width="0.3048" layer="21"/>
+<wire x1="-0.3048" y1="0" x2="-0.3048" y2="-0.762" width="0.3048" layer="21"/>
+<wire x1="0.3302" y1="0.762" x2="0.3302" y2="0" width="0.3048" layer="21"/>
+<wire x1="0.3302" y1="0" x2="0.3302" y2="-0.762" width="0.3048" layer="21"/>
+<wire x1="1.27" y1="0" x2="0.3302" y2="0" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="0" x2="-0.3048" y2="0" width="0.1524" layer="21"/>
+<pad name="1" x="-2.54" y="0" drill="0.8128" shape="octagon"/>
+<pad name="2" x="2.54" y="0" drill="0.8128" shape="octagon"/>
+<text x="-2.159" y="1.397" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-2.159" y="-2.667" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="2.159" y1="-0.381" x2="2.54" y2="0.381" layer="51"/>
+<rectangle x1="-2.54" y1="-0.381" x2="-2.159" y2="0.381" layer="51"/>
+</package>
+<package name="C025-024X044">
+<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
+grid 2.5 mm, outline 2.4 x 4.4 mm</description>
+<wire x1="-2.159" y1="-0.635" x2="-2.159" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-2.159" y1="0.635" x2="-1.651" y2="1.143" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-2.159" y1="-0.635" x2="-1.651" y2="-1.143" width="0.1524" layer="21" curve="90"/>
+<wire x1="1.651" y1="1.143" x2="-1.651" y2="1.143" width="0.1524" layer="21"/>
+<wire x1="2.159" y1="-0.635" x2="2.159" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="1.651" y1="-1.143" x2="-1.651" y2="-1.143" width="0.1524" layer="21"/>
+<wire x1="1.651" y1="1.143" x2="2.159" y2="0.635" width="0.1524" layer="21" curve="-90"/>
+<wire x1="1.651" y1="-1.143" x2="2.159" y2="-0.635" width="0.1524" layer="21" curve="90"/>
+<wire x1="-0.3048" y1="0.762" x2="-0.3048" y2="-0.762" width="0.3048" layer="21"/>
+<wire x1="0.3302" y1="0.762" x2="0.3302" y2="-0.762" width="0.3048" layer="21"/>
+<wire x1="1.27" y1="0" x2="0.3302" y2="0" width="0.1524" layer="51"/>
+<wire x1="-1.27" y1="0" x2="-0.3048" y2="0" width="0.1524" layer="51"/>
+<pad name="1" x="-1.27" y="0" drill="0.8128" shape="octagon"/>
+<pad name="2" x="1.27" y="0" drill="0.8128" shape="octagon"/>
+<text x="-1.778" y="1.397" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-1.778" y="-2.667" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="0204/5">
+<description>&lt;b&gt;RESISTOR&lt;/b&gt;&lt;p&gt;
+type 0204, grid 5 mm</description>
+<wire x1="2.54" y1="0" x2="2.032" y2="0" width="0.508" layer="51"/>
+<wire x1="-2.54" y1="0" x2="-2.032" y2="0" width="0.508" layer="51"/>
+<wire x1="-1.778" y1="0.635" x2="-1.524" y2="0.889" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-1.778" y1="-0.635" x2="-1.524" y2="-0.889" width="0.1524" layer="21" curve="90"/>
+<wire x1="1.524" y1="-0.889" x2="1.778" y2="-0.635" width="0.1524" layer="21" curve="90"/>
+<wire x1="1.524" y1="0.889" x2="1.778" y2="0.635" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-1.778" y1="-0.635" x2="-1.778" y2="0.635" width="0.1524" layer="51"/>
+<wire x1="-1.524" y1="0.889" x2="-1.27" y2="0.889" width="0.1524" layer="21"/>
+<wire x1="-1.143" y1="0.762" x2="-1.27" y2="0.889" width="0.1524" layer="21"/>
+<wire x1="-1.524" y1="-0.889" x2="-1.27" y2="-0.889" width="0.1524" layer="21"/>
+<wire x1="-1.143" y1="-0.762" x2="-1.27" y2="-0.889" width="0.1524" layer="21"/>
+<wire x1="1.143" y1="0.762" x2="1.27" y2="0.889" width="0.1524" layer="21"/>
+<wire x1="1.143" y1="0.762" x2="-1.143" y2="0.762" width="0.1524" layer="21"/>
+<wire x1="1.143" y1="-0.762" x2="1.27" y2="-0.889" width="0.1524" layer="21"/>
+<wire x1="1.143" y1="-0.762" x2="-1.143" y2="-0.762" width="0.1524" layer="21"/>
+<wire x1="1.524" y1="0.889" x2="1.27" y2="0.889" width="0.1524" layer="21"/>
+<wire x1="1.524" y1="-0.889" x2="1.27" y2="-0.889" width="0.1524" layer="21"/>
+<wire x1="1.778" y1="-0.635" x2="1.778" y2="0.635" width="0.1524" layer="51"/>
+<pad name="1" x="-2.54" y="0" drill="0.8128" shape="octagon"/>
+<pad name="2" x="2.54" y="0" drill="0.8128" shape="octagon"/>
+<text x="-2.0066" y="1.1684" size="0.9906" layer="25" ratio="10">&gt;NAME</text>
+<text x="-2.1336" y="-2.3114" size="0.9906" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-2.032" y1="-0.254" x2="-1.778" y2="0.254" layer="51"/>
+<rectangle x1="1.778" y1="-0.254" x2="2.032" y2="0.254" layer="51"/>
+</package>
 </packages>
 </library>
 </libraries>
@@ -539,17 +655,27 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="J1" library="Homework2" package="1X08" value="" x="-33.02" y="13.97">
-<attribute name="PROD_ID" value="CONN-08438" x="-33.02" y="13.97" size="1.778" layer="27" display="off"/>
+<element name="J1" library="Homework2" package="1X08" value="" x="48.895" y="16.51" rot="R90">
+<attribute name="PROD_ID" value="CONN-08438" x="48.895" y="16.51" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="J2" library="Homework2" package="1X08" value="" x="-33.02" y="19.05">
-<attribute name="PROD_ID" value="CONN-08438" x="-33.02" y="19.05" size="1.778" layer="27" display="off"/>
+<element name="J2" library="Homework2" package="1X08" value="" x="1.27" y="16.51" rot="R90">
+<attribute name="PROD_ID" value="CONN-08438" x="1.27" y="16.51" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="J3" library="Homework2" package="1X05" value="" x="-25.4" y="24.13"/>
-<element name="LED1" library="Homework2" package="LED3MM" value="" x="-20.32" y="31.75"/>
-<element name="LED2" library="Homework2" package="LED3MM" value="" x="-30.48" y="31.75"/>
-<element name="U$1" library="Homework2" package="DIL28-3" value="PIC32" x="-31.75" y="6.35"/>
+<element name="RED_LED" library="Homework2" package="LED3MM" value="" x="-20.32" y="31.75"/>
+<element name="GREEN_LED" library="Homework2" package="LED3MM" value="" x="-30.48" y="31.75"/>
+<element name="U$1" library="Homework2" package="DIL28-3" value="PIC32" x="25.4" y="22.86" rot="R270"/>
 <element name="U$2" library="Homework2" package="TO92" value="MCP1702" x="-39.37" y="25.4"/>
+<element name="U$3" library="Homework2" package="USB-MB-H" value="USB_B_PCB" x="3.81" y="44.45"/>
+<element name="10UF_1" library="Homework2" package="C050-024X044" value="" x="-38.1" y="-3.81"/>
+<element name="0.1UF_4" library="Homework2" package="C025-024X044" value="" x="-39.37" y="-8.89"/>
+<element name="0.1UF_1" library="Homework2" package="C025-024X044" value="" x="-39.37" y="-13.97"/>
+<element name="0.1UF_2" library="Homework2" package="C025-024X044" value="" x="-39.37" y="-19.05"/>
+<element name="0.1UF_3" library="Homework2" package="C025-024X044" value="" x="-39.37" y="-24.13"/>
+<element name="330_R1" library="Homework2" package="0204/5" value="" x="-38.1" y="-27.94"/>
+<element name="330_R2" library="Homework2" package="0204/5" value="" x="-38.1" y="-31.75"/>
+<element name="10K_R3" library="Homework2" package="0204/5" value="" x="-38.1" y="-35.56"/>
+<element name="10K_R4" library="Homework2" package="0204/5" value="" x="-38.1" y="-39.37"/>
 </elements>
 <signals>
 </signals>
