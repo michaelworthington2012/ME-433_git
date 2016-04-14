@@ -8254,30 +8254,32 @@ Used, eg, on the Arduino Pro/ Pro Mini boards.&lt;br&gt;
 <part name="10K_R3" library="Homework2" deviceset="R-US_" device="0204/5"/>
 <part name="10K_R4" library="Homework2" deviceset="R-US_" device="0204/5"/>
 <part name="8MHZRES" library="SparkFun-FreqCtrl" deviceset="RESONATOR" device="PTH"/>
+<part name="10UF_2" library="Homework2" deviceset="C-US" device="050-024X044"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
 <instances>
-<instance part="U$1" gate="G$1" x="73.66" y="48.26"/>
-<instance part="U$2" gate="G$1" x="10.16" y="86.36"/>
+<instance part="U$1" gate="G$1" x="76.2" y="43.18"/>
+<instance part="U$2" gate="G$1" x="147.32" y="96.52"/>
 <instance part="RED_LED" gate="G$1" x="15.24" y="55.88"/>
 <instance part="GREEN_LED" gate="G$1" x="15.24" y="30.48"/>
 <instance part="J1" gate="G$1" x="-5.08" y="48.26"/>
 <instance part="J2" gate="G$1" x="132.08" y="53.34" rot="R180"/>
-<instance part="J3" gate="G$1" x="104.14" y="83.82" rot="R270"/>
+<instance part="J3" gate="G$1" x="116.84" y="81.28" rot="R270"/>
 <instance part="U$3" gate="G$1" x="33.02" y="10.16"/>
-<instance part="10UF_1" gate="G$1" x="38.1" y="71.12"/>
-<instance part="0.1UF_4" gate="G$1" x="35.56" y="55.88"/>
+<instance part="10UF_1" gate="G$1" x="86.36" y="93.98"/>
+<instance part="0.1UF_4" gate="G$1" x="38.1" y="78.74"/>
 <instance part="0.1UF_1" gate="G$1" x="38.1" y="88.9"/>
-<instance part="0.1UF_2" gate="G$1" x="48.26" y="88.9"/>
-<instance part="0.1UF_3" gate="G$1" x="58.42" y="88.9"/>
+<instance part="0.1UF_2" gate="G$1" x="53.34" y="88.9"/>
+<instance part="0.1UF_3" gate="G$1" x="53.34" y="78.74"/>
 <instance part="330_R1" gate="G$1" x="99.06" y="17.78"/>
 <instance part="330_R2" gate="G$1" x="106.68" y="30.48"/>
 <instance part="10K_R3" gate="G$1" x="106.68" y="38.1"/>
 <instance part="10K_R4" gate="G$1" x="106.68" y="48.26"/>
 <instance part="8MHZRES" gate="G$1" x="116.84" y="20.32"/>
+<instance part="10UF_2" gate="G$1" x="99.06" y="93.98"/>
 </instances>
 <busses>
 </busses>

@@ -727,8 +727,8 @@ design rules under a new name.</description>
 <attribute name="PROD_ID" value="CONN-08438" x="1.27" y="16.51" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="PICKIT" library="Homework2" package="1X05" value="" x="48.26" y="48.26" rot="R270"/>
-<element name="RED_LED" library="Homework2" package="LED3MM" value="" x="-20.32" y="31.75"/>
-<element name="GREEN_LED" library="Homework2" package="LED3MM" value="" x="-30.48" y="31.75"/>
+<element name="RED_LED" library="Homework2" package="LED3MM" value="" x="19.05" y="2.54"/>
+<element name="GREEN_LED" library="Homework2" package="LED3MM" value="" x="2.54" y="11.43"/>
 <element name="U$1" library="Homework2" package="DIL28-3" value="PIC32" x="25.4" y="22.86" rot="R270"/>
 <element name="U$2" library="Homework2" package="TO92" value="MCP1702" x="36.83" y="8.89" rot="R270"/>
 <element name="U$3" library="Homework2" package="USB-MB-H" value="USB_B_PCB" x="3.81" y="44.45"/>
@@ -737,13 +737,13 @@ design rules under a new name.</description>
 <element name="0.1UF_1" library="Homework2" package="C025-024X044" value="" x="35.56" y="48.26" rot="R180"/>
 <element name="0.1UF_2" library="Homework2" package="C025-024X044" value="" x="33.02" y="38.1" rot="R270"/>
 <element name="0.1UF_3" library="Homework2" package="C025-024X044" value="" x="57.15" y="25.4"/>
-<element name="330_R1" library="Homework2" package="0204/5" value="" x="58.42" y="21.59"/>
-<element name="330_R2" library="Homework2" package="0204/5" value="" x="58.42" y="17.78"/>
+<element name="330_R1" library="Homework2" package="0204/5" value="" x="26.67" y="1.27"/>
+<element name="330_R2" library="Homework2" package="0204/5" value="" x="5.08" y="6.35" rot="R180"/>
 <element name="10K_R3" library="Homework2" package="0204/5" value="" x="58.42" y="13.97"/>
 <element name="10K_R4" library="Homework2" package="0204/5" value="" x="58.42" y="10.16"/>
 <element name="8MHZRES" library="SparkFun-FreqCtrl" package="RESONATOR-PTH" value="" x="15.24" y="17.78" rot="R90"/>
 <element name="10UF_2" library="Homework2" package="C050-024X044" value="" x="46.99" y="10.16" rot="R90"/>
-<element name="RESET" library="Homework2" package="1X03" value="" x="2.54" y="6.35"/>
+<element name="RESET" library="Homework2" package="1X03" value="" x="39.37" y="48.26"/>
 <element name="U$4" library="Homework2" package="SLIDER_FOOTPRINT" value="SLIDER_SWITCH" x="16.51" y="48.26"/>
 <element name="USER" library="Homework2" package="1X03" value="" x="2.54" y="1.27"/>
 </elements>
@@ -759,15 +759,25 @@ design rules under a new name.</description>
 <contactref element="10UF_2" pad="2"/>
 <contactref element="U$3" pad="GND"/>
 <contactref element="J1" pad="1"/>
-<wire x1="8.91" y1="42.85" x2="34.29" y2="48.26" width="0" layer="19" extent="1-1"/>
-<wire x1="21.59" y1="21.59" x2="8.91" y2="42.85" width="0" layer="19" extent="1-1"/>
-<wire x1="15.24" y1="17.78" x2="21.59" y2="21.59" width="0" layer="19" extent="1-1"/>
-<wire x1="29.21" y1="16.51" x2="21.59" y2="21.59" width="0" layer="19" extent="1-1"/>
-<wire x1="36.83" y1="10.16" x2="29.21" y2="16.51" width="0" layer="19" extent="1-1"/>
-<wire x1="39.37" y1="19.05" x2="36.83" y2="10.16" width="0" layer="19" extent="1-1"/>
-<wire x1="48.895" y1="16.51" x2="39.37" y2="19.05" width="0" layer="19" extent="1-1"/>
+<contactref element="USER" pad="1"/>
+<contactref element="RESET" pad="1"/>
+<contactref element="330_R2" pad="1"/>
+<contactref element="0.1UF_4" pad="1"/>
+<contactref element="0.1UF_3" pad="2"/>
+<wire x1="58.42" y1="25.4" x2="55.88" y2="40.64" width="0" layer="19" extent="1-1"/>
+<wire x1="48.895" y1="16.51" x2="58.42" y2="25.4" width="0" layer="19" extent="1-1"/>
 <wire x1="46.99" y1="12.7" x2="48.895" y2="16.51" width="0" layer="19" extent="1-1"/>
-<wire x1="1.27" y1="16.51" x2="15.24" y2="17.78" width="0" layer="19" extent="1-1"/>
+<wire x1="39.37" y1="19.05" x2="48.895" y2="16.51" width="0" layer="19" extent="1-1"/>
+<wire x1="36.83" y1="10.16" x2="39.37" y2="19.05" width="0" layer="19" extent="1-1"/>
+<wire x1="29.21" y1="16.51" x2="36.83" y2="10.16" width="0" layer="19" extent="1-1"/>
+<wire x1="21.59" y1="21.59" x2="29.21" y2="16.51" width="0" layer="19" extent="1-1"/>
+<wire x1="15.24" y1="17.78" x2="21.59" y2="21.59" width="0" layer="19" extent="1-1"/>
+<wire x1="7.62" y1="6.35" x2="15.24" y2="17.78" width="0" layer="19" extent="1-1"/>
+<wire x1="2.54" y1="1.27" x2="7.62" y2="6.35" width="0" layer="19" extent="1-1"/>
+<wire x1="1.27" y1="16.51" x2="7.62" y2="6.35" width="0" layer="19" extent="1-1"/>
+<wire x1="39.37" y1="48.26" x2="55.88" y2="40.64" width="0" layer="19" extent="1-1"/>
+<wire x1="34.29" y1="48.26" x2="39.37" y2="48.26" width="0" layer="19" extent="1-1"/>
+<wire x1="8.91" y1="42.85" x2="21.59" y2="21.59" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$8">
 <contactref element="0.1UF_2" pad="2"/>
@@ -810,8 +820,14 @@ design rules under a new name.</description>
 <contactref element="10UF_2" pad="1"/>
 <contactref element="U$1" pad="13"/>
 <contactref element="J2" pad="2"/>
+<contactref element="RED_LED" pad="A"/>
+<contactref element="0.1UF_4" pad="2"/>
+<contactref element="0.1UF_3" pad="1"/>
+<wire x1="55.88" y1="25.4" x2="58.42" y2="40.64" width="0" layer="19" extent="1-1"/>
+<wire x1="46.99" y1="7.62" x2="55.88" y2="25.4" width="0" layer="19" extent="1-1"/>
 <wire x1="36.83" y1="7.62" x2="46.99" y2="7.62" width="0" layer="19" extent="1-1"/>
 <wire x1="21.59" y1="8.89" x2="36.83" y2="7.62" width="0" layer="19" extent="1-1"/>
+<wire x1="17.78" y1="2.54" x2="21.59" y2="8.89" width="0" layer="19" extent="1-1"/>
 <wire x1="1.27" y1="19.05" x2="21.59" y2="8.89" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VBUS+5">
@@ -842,11 +858,17 @@ design rules under a new name.</description>
 <signal name="A4">
 <contactref element="J2" pad="3"/>
 <contactref element="U$1" pad="12"/>
-<wire x1="1.27" y1="21.59" x2="21.59" y2="11.43" width="0" layer="19" extent="1-1"/>
+<contactref element="GREEN_LED" pad="A"/>
+<wire x1="1.27" y1="11.43" x2="21.59" y2="11.43" width="0" layer="19" extent="1-1"/>
+<wire x1="1.27" y1="21.59" x2="1.27" y2="11.43" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="B4">
 <contactref element="J2" pad="4"/>
+<contactref element="USER" pad="3"/>
 <contactref element="U$1" pad="11"/>
+<contactref element="10K_R4" pad="2"/>
+<wire x1="21.59" y1="13.97" x2="60.96" y2="10.16" width="0" layer="19" extent="1-1"/>
+<wire x1="7.62" y1="1.27" x2="21.59" y2="13.97" width="0" layer="19" extent="1-1"/>
 <wire x1="1.27" y1="24.13" x2="21.59" y2="13.97" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="B3">
@@ -872,7 +894,11 @@ design rules under a new name.</description>
 <signal name="MCLR">
 <contactref element="U$1" pad="1"/>
 <contactref element="PICKIT" pad="1"/>
-<wire x1="21.59" y1="39.37" x2="48.26" y2="48.26" width="0" layer="19" extent="1-1"/>
+<contactref element="RESET" pad="3"/>
+<contactref element="10K_R3" pad="1"/>
+<wire x1="44.45" y1="48.26" x2="48.26" y2="48.26" width="0" layer="19" extent="1-1"/>
+<wire x1="21.59" y1="39.37" x2="44.45" y2="48.26" width="0" layer="19" extent="1-1"/>
+<wire x1="55.88" y1="13.97" x2="48.26" y2="48.26" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PGED1">
 <contactref element="U$1" pad="4"/>
@@ -913,6 +939,24 @@ design rules under a new name.</description>
 <contactref element="J1" pad="8"/>
 <contactref element="U$1" pad="26"/>
 <wire x1="29.21" y1="34.29" x2="48.895" y2="34.29" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$1">
+<contactref element="GREEN_LED" pad="K"/>
+<contactref element="330_R2" pad="2"/>
+<wire x1="3.81" y1="11.43" x2="2.54" y2="6.35" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$2">
+<contactref element="RED_LED" pad="K"/>
+<contactref element="330_R1" pad="2"/>
+<wire x1="20.32" y1="2.54" x2="29.21" y2="1.27" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$3">
+<contactref element="330_R1" pad="1"/>
+</signal>
+<signal name="+3V3">
+<contactref element="10K_R3" pad="2"/>
+<contactref element="10K_R4" pad="1"/>
+<wire x1="55.88" y1="10.16" x2="60.96" y2="13.97" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>

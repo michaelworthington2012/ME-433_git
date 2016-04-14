@@ -9099,6 +9099,11 @@ Used, eg, on the Arduino Pro/ Pro Mini boards.&lt;br&gt;
 <pinref part="GND2" gate="1" pin="GND"/>
 <wire x1="48.26" y1="10.16" x2="48.26" y2="7.62" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="330_R1" gate="G$1" pin="1"/>
+<wire x1="-17.78" y1="17.78" x2="-17.78" y2="15.24" width="0.1524" layer="91"/>
+<label x="-17.78" y="10.16" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="N$8" class="0">
 <segment>
@@ -9480,13 +9485,6 @@ Used, eg, on the Arduino Pro/ Pro Mini boards.&lt;br&gt;
 <pinref part="RED_LED" gate="G$1" pin="C"/>
 <pinref part="330_R1" gate="G$1" pin="2"/>
 <wire x1="-17.78" y1="33.02" x2="-17.78" y2="27.94" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$3" class="0">
-<segment>
-<pinref part="330_R1" gate="G$1" pin="1"/>
-<wire x1="-17.78" y1="17.78" x2="-17.78" y2="15.24" width="0.1524" layer="91"/>
-<label x="-17.78" y="10.16" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
