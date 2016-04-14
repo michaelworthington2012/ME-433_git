@@ -23921,6 +23921,17 @@ Standard 15-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 </device>
 </devices>
 </deviceset>
+<deviceset name="USB_B_PCB">
+<gates>
+</gates>
+<devices>
+<device name="" package="USB-MB-H">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>

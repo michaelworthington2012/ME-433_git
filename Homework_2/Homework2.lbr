@@ -16938,6 +16938,60 @@ Through-hole SPDT Switch&lt;br&gt;
 <wire x1="3.81" y1="1.27" x2="3.81" y2="-1.27" width="0.127" layer="21"/>
 <wire x1="3.81" y1="-1.27" x2="-3.81" y2="-1.27" width="0.127" layer="21"/>
 </package>
+<package name="BUTTONHOLE">
+<pad name="1" x="0" y="0" drill="2.2" diameter="3.81"/>
+<pad name="P$2" x="5.08" y="0" drill="2.2" diameter="3.81"/>
+<smd name="P$1" x="2.54" y="1.905" dx="1.27" dy="0.635" layer="1" rot="R90"/>
+<smd name="P$3" x="2.54" y="-1.905" dx="1.27" dy="0.635" layer="1" rot="R90"/>
+<polygon width="0.127" layer="29">
+<vertex x="0" y="1.905"/>
+<vertex x="5.08" y="1.905" curve="-180"/>
+<vertex x="5.08" y="-1.905"/>
+<vertex x="0" y="-1.905" curve="-180"/>
+</polygon>
+<polygon width="0.127" layer="1">
+<vertex x="0" y="1.905"/>
+<vertex x="5.08" y="1.905" curve="-180"/>
+<vertex x="5.08" y="-1.905"/>
+<vertex x="0" y="-1.905" curve="-180"/>
+</polygon>
+<polygon width="0.127" layer="30">
+<vertex x="0" y="1.905"/>
+<vertex x="5.08" y="1.905" curve="-180"/>
+<vertex x="5.08" y="-1.905"/>
+<vertex x="0" y="-1.905" curve="-180"/>
+</polygon>
+<polygon width="0.127" layer="16">
+<vertex x="0" y="1.905"/>
+<vertex x="5.08" y="1.905" curve="-180"/>
+<vertex x="5.08" y="-1.905"/>
+<vertex x="0" y="-1.905" curve="-180"/>
+</polygon>
+<polygon width="0.127" layer="41">
+<vertex x="0" y="1.27" curve="90"/>
+<vertex x="-1.27" y="0" curve="90"/>
+<vertex x="0" y="-1.27" curve="90"/>
+<vertex x="1.27" y="0" curve="90"/>
+</polygon>
+<polygon width="0.127" layer="41">
+<vertex x="5.08" y="1.27" curve="90"/>
+<vertex x="3.81" y="0" curve="90"/>
+<vertex x="5.08" y="-1.27" curve="90"/>
+<vertex x="6.35" y="0" curve="90"/>
+</polygon>
+<polygon width="0.127" layer="42">
+<vertex x="0" y="1.27" curve="90"/>
+<vertex x="-1.27" y="0" curve="90"/>
+<vertex x="0" y="-1.27" curve="90"/>
+<vertex x="1.27" y="0" curve="90"/>
+</polygon>
+<polygon width="0.127" layer="42">
+<vertex x="5.08" y="1.27" curve="90"/>
+<vertex x="3.81" y="0" curve="90"/>
+<vertex x="5.08" y="-1.27" curve="90"/>
+<vertex x="6.35" y="0" curve="90"/>
+</polygon>
+</package>
 </packages>
 <symbols>
 <symbol name="R-US">
@@ -17820,6 +17874,16 @@ Through-hole SPDT Switch&lt;br&gt;
 <wire x1="-10.16" y1="17.78" x2="10.16" y2="17.78" width="0.254" layer="94"/>
 <wire x1="10.16" y1="17.78" x2="10.16" y2="-2.54" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-2.54" x2="-10.16" y2="-2.54" width="0.254" layer="94"/>
+</symbol>
+<symbol name="BUTTONHOLE">
+<pin name="1.PIN1" x="-15.24" y="0" length="middle"/>
+<pin name="2.PIN2" x="15.24" y="0" length="middle" rot="R180"/>
+<text x="-7.62" y="2.54" size="1.27" layer="94">&gt;NAME</text>
+<text x="2.54" y="2.54" size="1.27" layer="94">&gt;VALUE</text>
+<wire x1="-12.7" y1="-2.54" x2="-12.7" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="5.08" x2="12.7" y2="5.08" width="0.254" layer="94"/>
+<wire x1="12.7" y1="5.08" x2="12.7" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-2.54" x2="-12.7" y2="-2.54" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -24699,6 +24763,22 @@ DPDT SMT slide switch, AYZ0202, SWCH-08179</description>
 <connect gate="G$1" pin="1.PIN1" pad="1.PIN1"/>
 <connect gate="G$1" pin="2.PIN2" pad="2.PIN2"/>
 <connect gate="G$1" pin="3.PIN3" pad="3.PIN3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BUTTON">
+<gates>
+<gate name="G$1" symbol="BUTTONHOLE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="BUTTONHOLE">
+<connects>
+<connect gate="G$1" pin="1.PIN1" pad="1"/>
+<connect gate="G$1" pin="2.PIN2" pad="P$1"/>
 </connects>
 <technologies>
 <technology name=""/>
