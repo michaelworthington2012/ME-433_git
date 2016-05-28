@@ -8984,6 +8984,7 @@ Used, eg, on the Arduino Pro/ Pro Mini boards.&lt;br&gt;
 <part name="+3V2" library="Homework2" deviceset="+3V3" device=""/>
 <part name="GND1" library="Homework2" deviceset="GND" device=""/>
 <part name="GND2" library="Homework2" deviceset="GND" device=""/>
+<part name="GND3" library="Homework2" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9017,6 +9018,7 @@ Used, eg, on the Arduino Pro/ Pro Mini boards.&lt;br&gt;
 <instance part="+3V2" gate="G$1" x="7.62" y="30.48" rot="R90"/>
 <instance part="GND1" gate="1" x="142.24" y="124.46" rot="R180"/>
 <instance part="GND2" gate="1" x="48.26" y="5.08"/>
+<instance part="GND3" gate="1" x="93.98" y="73.66" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -9104,8 +9106,6 @@ Used, eg, on the Arduino Pro/ Pro Mini boards.&lt;br&gt;
 <wire x1="-17.78" y1="17.78" x2="-17.78" y2="15.24" width="0.1524" layer="91"/>
 <label x="-17.78" y="10.16" size="1.778" layer="95"/>
 </segment>
-</net>
-<net name="N$8" class="0">
 <segment>
 <pinref part="0.1UF_2" gate="G$1" pin="2"/>
 <pinref part="U$1" gate="G$1" pin="27.AVSS"/>
@@ -9114,6 +9114,9 @@ Used, eg, on the Arduino Pro/ Pro Mini boards.&lt;br&gt;
 <wire x1="127" y1="73.66" x2="109.22" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="58.42" x2="101.6" y2="58.42" width="0.1524" layer="91"/>
 <junction x="101.6" y="58.42"/>
+<wire x1="93.98" y1="58.42" x2="93.98" y2="71.12" width="0.1524" layer="91"/>
+<junction x="93.98" y="58.42"/>
+<pinref part="GND3" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="N$9" class="0">
