@@ -102,7 +102,7 @@ int main() {
         
 	     _CP0_SET_COUNT(0);
           
-         while(_CP0_GET_COUNT() <8000) {
+         while(_CP0_GET_COUNT() <80000) {
           ;
           while(!PORTBbits.RB4){ //turn LED off if button is pushed
             ;
