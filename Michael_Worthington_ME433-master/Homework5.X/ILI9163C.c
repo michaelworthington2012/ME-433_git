@@ -16,6 +16,8 @@
 #include <xc.h>
 #include "ILI9163C.h"
 
+
+
 void SPI1_init() {
 	SDI1Rbits.SDI1R = 0b0100; // B8 is SDI1
     RPA1Rbits.RPA1R = 0b0011; // A1 is SDO1
@@ -26,7 +28,7 @@ void SPI1_init() {
     ANSELBbits.ANSB15 = 0;
     TRISBbits.TRISB15 = 0;
     LATBbits.LATB15 = 0;
-	
+        
 	SPI1CON = 0; // turn off the spi module and reset it
     SPI1BUF; // clear the rx buffer by reading from it
     SPI1BRG = 1; // baud rate to 12 MHz [SPI1BRG = (48000000/(2*desired))-1]
