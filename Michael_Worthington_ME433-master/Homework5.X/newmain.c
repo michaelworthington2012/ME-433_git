@@ -3,13 +3,13 @@
 #include    "ILI9163C.h"
 #include    "i2c_master.h"
 
-#define length      21
 
-void LCD_drawString(char xpos, char ypos, char* str);
+
+void LCD_makeString(char xpos, char ypos, char* print_string);
 void LCD_drawChar(char xpos, char ypos, char ch);
 
-unsigned short text = YELLOW;
-unsigned short screen = BLACK;
+unsigned short text = BLACK;
+unsigned short screen = RED;
     
 int main(void) {
     // PIC32 Setup
@@ -30,23 +30,9 @@ int main(void) {
     
     while(1){
     LCD_clearScreen(screen);
-    LCD_drawChar( 5, 25, 'H');
-    LCD_drawChar( 10, 25, 'e');
-    LCD_drawChar( 15, 25, 'l');
-    LCD_drawChar( 20, 25, 'l');
-    LCD_drawChar( 25, 25, 'o');
-    LCD_drawChar( 30, 25, ' ');
-    LCD_drawChar( 35, 25, 'W');
-    LCD_drawChar( 40, 25, 'o');
-    LCD_drawChar( 45, 25, 'r');
-    LCD_drawChar( 50, 25, 'l');
-    LCD_drawChar( 55, 25, 'd');
-    LCD_drawChar( 60, 25, '!');
-    LCD_drawChar( 65, 25, ' ');
-    LCD_drawChar( 70, 25, '1');
-    LCD_drawChar( 75, 25, '3');
-    LCD_drawChar( 80, 25, '3');
-    LCD_drawChar( 85, 25, '7');
+   
+    LCD_makeString(10,50,"Hi Charlie");
+     LCD_makeString(10,75,"Go Cats!");
     LATAbits.LATA4 = 1;
     //LCD_drawPixel(64, 64, BLUE);
     
@@ -70,15 +56,15 @@ void LCD_setAddr(unsigned short, unsigned short, unsigned short, unsigned short)
 void LCD_clearScreen(unsigned short); // set the color of every pixel
 */
 
-void LCD_drawString(char xpos, char ypos, char* str)
+
+void LCD_makeString(char xpos, char ypos, char* print_string)
 {
-    int i = 0;
-    for (;i<length;i++)
+    int i =0;
+    int strLength = strlen(print_string);
+    for (; i < strLength;    i++)
     {
-        if(str[i]=='\0'){break;};
-        LCD_drawChar(xpos+i*6,ypos,str[i]);
+        LCD_drawChar(xpos+i*5,ypos,print_string[i]);
     }
-    
 }
 void LCD_drawChar(char xpos, char ypos, char ch)
 {
