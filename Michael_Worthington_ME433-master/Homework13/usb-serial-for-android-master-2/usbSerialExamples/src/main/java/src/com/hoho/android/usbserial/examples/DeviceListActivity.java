@@ -19,7 +19,7 @@
  * Project home page: https://github.com/mik3y/usb-serial-for-android
  */
 
-package src.com.hoho.android.usbserial.examples;
+package com.hoho.android.usbserial.examples;
 
 import android.app.Activity;
 import android.content.Context;
@@ -51,6 +51,8 @@ import com.hoho.android.usbserial.util.HexDump;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import src.com.hoho.android.usbserial.examples.SerialConsoleActivity;
 
 /**
  * Shows a {@link ListView} of available USB devices.
