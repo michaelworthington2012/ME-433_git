@@ -1,0 +1,18 @@
+The robot worked well using some simple commands. 
+The basic outline was that the camera detected all pixels along the top part of the screen that had red at a certain threshold in them. 
+
+There was a slider that would adjust the red threshold. 
+
+The threshold was then used to find the center of mass and this center of mass value was stored as an integer that was then sent to the PIC using CDC. 
+
+The pic used simple proportional control with PWM's based on the value of the center of mass. 
+
+Lmotor = PWM signal * Value from center
+Rmotor = PWM signal * Value from venter -1
+
+This ensured that the motors were adjusting proprotionally to wherever the center of mass was. 
+
+This was a simple code, but worked well. The limiting factor were red detection and speed. As speed was increased the rate at which the robot dtected the line caused the line to be lost. 
+
+There was a good medium which allowed th ebot to manuever quickly without losing the line. 
+
